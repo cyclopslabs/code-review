@@ -33,6 +33,15 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
+// app.get('/', function(request, response) {
+// 	nano.db.create(db_name, function(error, body, headers) {
+// 		if (error) { return response.send(error.message, error['status-code']); }
+// 		db.insert({foo:true}, function(error2, body2, headers2) {
+// 			if (error2) {return response.send(error2.message, error2['status-code']); }
+// 			response.send("Insert ok!", 200);
+// 		});
+// 	});
+// });
 app.get('/users', user.list);
 
 http.createServer(app).listen(app.get('port'), function(){
