@@ -1,0 +1,21 @@
+{
+	"name" : "code-review",
+	"description" : "Track and request code reviews",
+	"version" : "0.0.1",
+	"author" : {
+		"name" : "Paul Williams",
+		"email" : "pwilliams@webmd.net"
+	},
+	"devDependencies" : {
+		"express" : "3.3.5",
+		"grunt" : "0.4.1",
+		"jade" : "0.34.1",
+		"github" : "0.1.8",
+		"nano" : "4.1.1"
+
+	},
+  	"repository": {
+    	"type": "git",
+    	"url": "git@github.com:cyclopslabs/code-review.git"
+  	}
+}
